@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interview Presence</title>
+<meta name="description" content="One-to-one interview coaching with Bikram Singh. Clear answers, a calm voice and real presence on camera. Book a free 30-minute call.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* VOICE a personal coaching practice: editorial, first person, quiet
+   IDEA a marked-up interview answer, the way a coach edits a transcript
+   PICTURE one real question with the answer before and after coaching, the after version labelled part by part
+   COLOUR white, indigo-black ink #1b1a2e, deep indigo field #221f4a, tomato #cf3d1e for actions only
+   TYPE Newsreader 500 + Figtree
+   LAYOUT laptop: headline across the top, intro left and marked-up answer right; phone: headline, intro, answer */
+:root{color-scheme:light;--bg:#ffffff;--ink:#1b1a2e;--soft:#5d5c70;--line:#e2e1ea;--tint:#f3f2f9;--deep:#221f4a;--act:#cf3d1e}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Figtree,Arial,sans-serif;overflow-x:clip}
+h1,h2,h3,.serif{font-family:Newsreader,Georgia,serif;font-weight:500;letter-spacing:-.02em;line-height:1.06;margin:0}
+h1{font-size:clamp(40px,6vw,76px);max-width:15em}
+h2{font-size:clamp(30px,3.6vw,44px)}
+h3{font-size:24px;line-height:1.2}
+p{margin:0}
+a{color:inherit}
+.band{padding-block:clamp(48px,6vw,96px);padding-left:max(6vw,18px);padding-right:max(6vw,18px)}
+.wrap{max-width:1140px;margin:0 auto}
+nav{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding:22px max(6vw,18px)}
+.brand{font-family:Newsreader,Georgia,serif;font-size:23px;font-weight:500;letter-spacing:-.01em;text-decoration:none}
+.links{display:flex;gap:28px;font-size:15px}
+.links a{text-decoration:none;color:var(--soft)}
+.links a:hover{color:var(--ink)}
+.links a.go{color:var(--ink);font-weight:600;border-bottom:2px solid var(--act);padding-bottom:2px}
+.btn{display:inline-block;background:var(--act);color:#fff;text-decoration:none;border:0;border-radius:4px;padding:15px 24px;font:600 16px Figtree,Arial,sans-serif;cursor:pointer}
+.btn:hover{background:#b53317}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+header.band{padding-top:clamp(28px,4vw,56px)}
+.hero{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,88px);margin-top:clamp(32px,4vw,56px);align-items:start}
+.intro p{font-size:19px;color:var(--soft)}
+.intro p+p{margin-top:16px}
+.intro .btn{margin-top:30px}
+.intro .count{font-size:15px;margin-top:16px;color:var(--soft)}
+.intro .count b{color:var(--ink);font-weight:600}
+.markup{background:var(--tint);padding:clamp(22px,3vw,36px);border-radius:6px}
+.markup .q{font-family:Newsreader,Georgia,serif;font-size:22px;line-height:1.3;padding-bottom:18px;border-bottom:1px solid #d5d3e3}
+.markup .q small{display:block;font:500 13px Figtree,Arial,sans-serif;color:var(--soft);margin-bottom:6px}
+.lab{font-size:13px;font-weight:600;color:var(--soft);margin:20px 0 8px}
+.before{color:#8a899b;font-size:16px;text-decoration:line-through;text-decoration-color:#bdbccb}
+.part{display:grid;grid-template-columns:86px minmax(0,1fr);gap:14px;padding:10px 0;border-top:1px solid #d5d3e3;font-size:16px}
+.part:first-of-type{border-top:0}
+.part span{font-size:13px;font-weight:600;color:var(--act);padding-top:3px}
+.cap{font-size:13px;color:var(--soft);margin-top:14px}
+.split{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(32px,6vw,88px);align-items:start}
+.split .side p{color:var(--soft);margin-top:16px}
+@media(min-width:901px){.split .side{position:sticky;top:32px}}
+.rows{border-top:1px solid var(--ink)}
+.rowi{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.rowi p{color:var(--soft)}
+.tint{background:var(--tint)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px);margin-top:40px}
+.step{border-top:1px solid var(--ink);padding-top:18px}
+.step .when{font-size:14px;font-weight:600;color:var(--act);margin-bottom:10px}
+.step p:last-child{color:var(--soft);margin-top:10px}
+.letter p{font-size:19px;margin-top:18px}
+.letter p:first-of-type{margin-top:26px}
+.sign{font-family:Newsreader,Georgia,serif;font-size:28px;margin-top:28px}
+.sign small{display:block;font:400 15px Figtree,Arial,sans-serif;color:var(--soft);margin-top:2px}
+.facts{margin:0;border-top:1px solid var(--ink)}
+.facts div{padding:14px 0;border-bottom:1px solid var(--line)}
+.facts dt{font-size:13px;color:var(--soft)}
+.facts dd{margin:2px 0 0}
+.deep{background:var(--deep);color:#fff}
+.deep .side p{color:#c9c7e2}
+.deep ul{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid #4a4780}
+.deep li{padding:12px 0;border-bottom:1px solid #4a4780;color:#e4e3f3}
+form{display:grid;gap:16px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+label{display:grid;gap:6px;font-size:14px;font-weight:500;color:#e4e3f3}
+input,select,textarea{font:16px Figtree,Arial,sans-serif;padding:13px 14px;border:1px solid #fff;border-radius:4px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:3px solid #f0a391;outline-offset:0}
+textarea{min-height:96px;resize:vertical}
+form .btn{justify-self:start}
+.note{font-size:13px;color:#c9c7e2}
+.err{display:none;color:#ffb3a3;font-size:14px}
+.done{display:none;padding:14px 16px;border-radius:4px;background:#fff;color:var(--ink);font-size:16px}
+.done a{color:var(--act);font-weight:600}
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;color:var(--soft);padding:26px max(6vw,18px)}
+@media(max-width:900px){.hero,.split{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:minmax(0,1fr);gap:28px}}
+@media(max-width:600px){.links a:not(.go){display:none}.rowi,.two{grid-template-columns:minmax(0,1fr)}.rowi{gap:6px}.part{grid-template-columns:70px minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<nav>
+<a class="brand" href="#top">Interview Presence</a>
+<div class="links"><a href="#coaching">Coaching</a><a href="#how">How it works</a><a href="#about">About</a><a class="go" href="https://calendly.com/singh-bikram8118/30min" target="_blank" rel="noopener">Book a call</a></div>
+</nav>
+
+<header class="band" id="top"><div class="wrap">
+<h1>You know your work. Let’s make sure the interviewer hears it.</h1>
+<div class="hero">
+<div class="intro">
+<p>I’m Bikram Singh. I coach candidates one-to-one on how they answer, how they sound and how they come across on camera.</p>
+<p>Your accent is not the problem, and we won’t touch it. We fix the order of your answer, your pace and your presence.</p>
+<a class="btn" href="https://calendly.com/singh-bikram8118/30min" target="_blank" rel="noopener">Book a free 30-minute call</a>
+<p class="count"><b>160+ candidates</b> coached so far</p>
+</div>
+<div class="markup">
+<p class="q"><small>The interviewer asks</small>“Tell me about a time you found an error.”</p>
+<p class="lab">What most people say</p>
+<p class="before">So, basically, at my last company we had many reports, and my manager used to ask me for different things, and one time there was an issue with the numbers, and actually it was a long process…</p>
+<p class="lab">What we practice</p>
+<div class="part"><span>Answer</span><p>I caught a duplicate billing entry before it reached the client.</p></div>
+<div class="part"><span>Proof</span><p>I saw a variance in the monthly report, traced it to the entry and fixed it the same day.</p></div>
+<div class="part"><span>Check</span><p>Would you like me to walk through how I found it?</p></div>
+<p class="cap">An example answer, before and after coaching.</p>
+</div>
+</div>
+</div></header>
+
+<section class="band" id="coaching"><div class="wrap split">
+<div class="side"><h2>What we work on</h2><p>Most answers fall short for the same few reasons. Each one is a habit, and habits can be trained.</p></div>
+<div class="rows">
+<div class="rowi"><h3>A calm voice</h3><p>A slower pace, pauses in place of “um” and “basically”, and a breath before you answer.</p></div>
+<div class="rowi"><h3>Confident wording</h3><p>Saying “I” for your part of the work, without hedging or apologizing.</p></div>
+<div class="rowi"><h3>Direct answers</h3><p>The answer in your first sentence, then one example, then a short check that you covered what they asked.</p></div>
+<div class="rowi"><h3>Stories that flow</h3><p>Five stories from your own career that you can tell clearly in about 90 seconds each.</p></div>
+<div class="rowi"><h3>Inflection</h3><p>Stressing the result, slowing down for the point, and ending statements like statements.</p></div>
+<div class="rowi"><h3>Camera presence</h3><p>Eye contact through the lens, a natural smile and a setup that looks prepared.</p></div>
+</div>
+</div></section>
+
+<section class="band tint" id="how"><div class="wrap">
+<h2>How it works</h2>
+<div class="steps">
+<div class="step"><p class="when">First</p><h3>A free 30-minute call</h3><p>You tell me about the role and answer one question. I tell you the one change that will help most.</p></div>
+<div class="step"><p class="when">Weeks 1 to 3</p><h3>Weekly sessions</h3><p>We record your answers, watch them back and fix one habit at a time. You practice 15 minutes a day in between.</p></div>
+<div class="step"><p class="when">Week 4</p><h3>A full mock interview</h3><p>A realistic interview with follow-up questions, compared side by side with your first recording.</p></div>
+</div>
+</div></section>
+
+<section class="band" id="about"><div class="wrap split">
+<div class="side">
+<h2>About me</h2>
+<dl class="facts" style="margin-top:28px">
+<div><dt>Coaching</dt><dd>160+ interview candidates</dd></div>
+<div><dt>Career</dt><dd>Financial analyst, property management</dd></div>
+<div><dt>Education</dt><dd>Undergraduate degree in finance</dd></div>
+<div><dt>Based in</dt><dd>Dallas–Fort Worth, coaching online</dd></div>
+</dl>
+</div>
+<div class="letter">
+<h3 style="font-size:clamp(26px,3vw,36px)">I started this after interviewing a candidate who knew the job and still couldn’t get the point across.</h3>
+<p>It wasn’t the accent. It was a minute of background before the answer, a rushed pace, and no pause to check whether I was following. I have seen the same thing many times since, from very capable people.</p>
+<p>My own career is in financial analysis: variance reviews, rent roll reporting and financial models for a large multifamily portfolio. That work taught me to explain numbers to busy people in one clear sentence. I teach candidates to do the same with their own experience.</p>
+<p class="sign">Bikram Singh<small>Interview Presence</small></p>
+</div>
+</div></section>
+
+<section class="band deep" id="book"><div class="wrap split">
+<div class="side">
+<h2>Book a free call</h2>
+<p>Pick a time that suits you. You’ll get a Google Meet link by email straight away.</p>
+</div>
+<div>
+<ul style="margin-top:0"><li>30 minutes on video</li><li>Bring the question you dread most</li><li>No obligation to continue</li></ul>
+<a class="btn" style="margin-top:32px" href="https://calendly.com/singh-bikram8118/30min" target="_blank" rel="noopener">Choose a time</a>
+<p class="note" style="margin-top:14px">Opens Calendly. Times are shown in your own time zone.</p>
+</div>
+</div></section>
+
+<footer><span>© 2026 Interview Presence · interviewpresence.com</span><span><a href="mailto:singh.bikram8118@gmail.com">singh.bikram8118@gmail.com</a></span></footer>
+
+</body>
+</html>
