@@ -35,7 +35,7 @@ nav{display:flex;justify-content:space-between;align-items:baseline;gap:16px;fle
 .btn:hover{background:#b53317}
 .btn:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 header.band{padding-top:clamp(28px,4vw,56px)}
-.hero{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,88px);margin-top:clamp(32px,4vw,56px);align-items:start}
+.hero{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,72px);margin-top:clamp(28px,3vw,44px);align-items:start}
 .intro p{font-size:19px;color:var(--soft)}
 .intro p+p{margin-top:16px}
 .intro .pitch{font-family:Newsreader,Georgia,serif;font-size:clamp(26px,2.6vw,32px);line-height:1.25;letter-spacing:-.01em;color:var(--ink);border-left:3px solid var(--act);padding-left:20px;margin-bottom:22px}
@@ -59,6 +59,10 @@ header.band{padding-top:clamp(28px,4vw,56px)}
 .rowi{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .rowi p{color:var(--soft)}
 .tint{background:var(--tint)}
+.hero-vsl video{display:block;width:100%;aspect-ratio:16/9;border-radius:6px;background:var(--ink);box-shadow:0 18px 40px -24px rgba(20,18,40,.45)}
+.hero-vsl .cap{font-size:14px;color:var(--soft);margin-top:12px}
+.ex{max-width:880px}
+.ex .markup{background:#fff;margin-top:28px}
 .vsl{max-width:880px;margin:0 auto;text-align:center}
 .vsl p{color:var(--soft);margin-top:12px}
 .vsl video{display:block;width:100%;aspect-ratio:16/9;margin-top:28px;border-radius:6px;background:var(--ink)}
@@ -91,7 +95,7 @@ form .btn{justify-self:start}
 .done{display:none;padding:14px 16px;border-radius:4px;background:#fff;color:var(--ink);font-size:16px}
 .done a{color:var(--act);font-weight:600}
 footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;color:var(--soft);padding:26px max(6vw,18px)}
-@media(max-width:900px){.hero,.split{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:minmax(0,1fr);gap:28px}}
+@media(max-width:900px){.hero,.split{grid-template-columns:minmax(0,1fr)}.hero-vsl{order:-1}.steps{grid-template-columns:minmax(0,1fr);gap:28px}}
 @media(max-width:600px){.links a:not(.go){display:none}.rowi,.two{grid-template-columns:minmax(0,1fr)}.rowi{gap:6px}.part{grid-template-columns:70px minmax(0,1fr)}}
 </style>
 </head>
@@ -111,6 +115,18 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-s
 <a class="btn" href="https://calendly.com/singh-bikram8118/30min" target="_blank" rel="noopener">Book a free 30-minute call</a>
 <p class="count"><b>160+ candidates</b> coached so far</p>
 </div>
+<div class="hero-vsl">
+<video controls playsinline preload="metadata" poster="media/vsl-poster.jpg">
+<source src="media/vsl.mp4" type="video/mp4">
+Your browser can’t play this video. <a href="media/vsl.mp4">Download it here.</a>
+</video>
+<p class="cap">Watch: why good candidates lose offers, and how we fix it.</p>
+</div>
+</div>
+</div></header>
+
+<section class="band tint" id="example"><div class="wrap ex">
+<h2>The same answer, before and after</h2>
 <div class="markup">
 <p class="q"><small>The interviewer asks</small>“Tell me about a time you found an error.”</p>
 <p class="lab">What most people say</p>
@@ -121,17 +137,6 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-s
 <div class="part"><span>Check</span><p>Would you like me to walk through how I found it?</p></div>
 <p class="cap">An example answer, before and after coaching.</p>
 </div>
-</div>
-</div></header>
-
-<section class="band tint" id="watch"><div class="vsl">
-<h2>Watch: why good candidates lose offers</h2>
-<p>A minute and a half on what goes wrong in the room, and how we fix it.</p>
-<video controls playsinline preload="metadata" poster="media/vsl-poster.jpg">
-<source src="media/vsl.mp4" type="video/mp4">
-Your browser can’t play this video. <a href="media/vsl.mp4">Download it here.</a>
-</video>
-<a class="btn" href="https://calendly.com/singh-bikram8118/30min" target="_blank" rel="noopener">Book a free 30-minute call</a>
 </div></section>
 
 <section class="band" id="coaching"><div class="wrap split">
