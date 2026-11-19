@@ -59,6 +59,10 @@ header.band{padding-top:clamp(28px,4vw,56px)}
 .rowi{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .rowi p{color:var(--soft)}
 .tint{background:var(--tint)}
+.vsl{max-width:880px;margin:0 auto;text-align:center}
+.vsl p{color:var(--soft);margin-top:12px}
+.vsl video{display:block;width:100%;aspect-ratio:16/9;margin-top:28px;border-radius:6px;background:var(--ink)}
+.vsl .btn{margin-top:28px}
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px);margin-top:40px}
 .step{border-top:1px solid var(--ink);padding-top:18px}
 .step .when{font-size:14px;font-weight:600;color:var(--act);margin-bottom:10px}
@@ -119,6 +123,16 @@ footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-s
 </div>
 </div>
 </div></header>
+
+<section class="band tint" id="watch"><div class="vsl">
+<h2>Watch: why good candidates lose offers</h2>
+<p>A minute and a half on what goes wrong in the room, and how we fix it.</p>
+<video controls playsinline preload="metadata" poster="media/vsl-poster.jpg">
+<source src="media/vsl.mp4" type="video/mp4">
+Your browser can’t play this video. <a href="media/vsl.mp4">Download it here.</a>
+</video>
+<a class="btn" href="https://calendly.com/singh-bikram8118/30min" target="_blank" rel="noopener">Book a free 30-minute call</a>
+</div></section>
 
 <section class="band" id="coaching"><div class="wrap split">
 <div class="side"><h2>What we work on</h2><p>Most answers fall short for the same few reasons. Each one is a habit, and habits can be trained.</p></div>
